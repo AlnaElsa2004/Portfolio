@@ -383,3 +383,59 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+
+#stacks {
+    padding: 50px 0;
+    text-align: center;
+    
+}
+
+.stacks-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns */
+    grid-template-rows: repeat(3, auto);  /* 3 rows */
+    gap: 90px; /* Spacing between items */
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 00px; /* Adjusted max-width for a larger container */
+    margin: 0 auto;
+}
+
+.stacks-list div {
+    width: 100px; /* Fixed size for uniformity */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: transform 0.3s ease-in-out;
+    padding: 10px; /* Added padding for spacing inside div */
+}
+
+.stacks-list div:hover {
+    transform: scale(1.1);
+}
+
+.stacks-list img {
+    width: 60px;  /* Adjusted size for icons */
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .stacks-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .stacks-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    }
+}
+#stacks h1.sub-title {
+    margin-bottom: 40px; /* Adjust this value to control the space between the heading and the icons */
+}
