@@ -112,62 +112,64 @@
                     </div>
                 </div>
             </div>
-    <div id="projects">
-          <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/EKO.png">
-                    <div class="layer">
-                        <h3>EKO</h3>
-                        <p>EKO is an innovative platform that connects the general public with repair technicians, enabling the sale of unusable electronic and electrical components at better prices. This platform helps technicians find parts easily, offering affordable repair services while promoting eco-friendly practices, upcycling, and contributing to a circular economy. </p>
-                        <a href="https://github.com/AlnaElsa2004/Eko"><i class="fa-solid fa-link"></i></a>
+            <div id="projects">
+                <div class="container">
+                    <h1 class="sub-title">My Work</h1>
+                    <div class="work-list" id="workList">
+                        <!-- Initial visible projects -->
+                        <div class="work">
+                            <img src="images/EKO.png">
+                            <div class="layer">
+                                <h3>EKO</h3>
+                                <p>EKO is an innovative platform that connects the general public with repair technicians, enabling the sale of unusable electronic and electrical components at better prices.</p>
+                                <a href="https://github.com/AlnaElsa2004/Eko"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/blog.png">
+                            <div class="layer">
+                                <h3>Blog App</h3>
+                                <p>The Blog App is a web application designed to explore and share content across a variety of fascinating topics, including art, science, technology, cinema, food, and more.</p>
+                                <a href="https://github.com/AlnaElsa2004/blog-app"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/orion.png">
+                            <div class="layer">
+                                <h3>Orion</h3>
+                                <p>Orion is a next-generation collaboration app designed to streamline team communication and project management.</p>
+                                <a href="https://github.com/AlnaElsa2004/Orion"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <!-- Additional projects (initially hidden) -->
+                        <div class="work hidden">
+                            <img src="images/object.png">
+                            <div class="layer">
+                                <h3>Object Tracking</h3>
+                                <p>This object tracking project utilizes two computer vision techniques, KCF and CSRT, to track objects in video frames.</p>
+                                <a href="https://github.com/AlnaElsa2004/object-tracking"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="work hidden">
+                            <img src="images/yt.png">
+                            <div class="layer">
+                                <h3>YouTube Channel Analysis</h3>
+                                <p>This Python project leverages the YouTube Data API to extract and analyze data from YouTube channels and their videos.</p>
+                                <a href="https://github.com/AlnaElsa2004/YouTube-Channel-and-Video-Data-Analysis-Using-Python"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="work hidden">
+                            <img src="images/flood.webp">
+                            <div class="layer">
+                                <h3>FloodGuard</h3>
+                                <p>Flood Guard is a predictive modeling project that assesses flood risk in the U.S. based on current rainfall conditions.</p>
+                                <a href="https://github.com/AlnaElsa2004/FloodGuard"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/blog.png">
-                    <div class="layer">
-                        <h3>Blog App</h3>
-                        <p>The Blog App is a web application designed to explore and share content across a variety of fascinating topics, including art, science, technology, cinema, food, and more. Built using modern full-stack technologies, the app allows users to create, read, update, and delete blog posts, interact with others through comments, and browse through categories of interest. </p>
-                        <a href="https://github.com/AlnaElsa2004/blog-app"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/orion.png">
-                    <div class="layer">
-                        <h3>Orion</h3>
-                        <p>Orion is a next-generation collaboration app designed to streamline team communication and project management. Built with Flutter and Firebase, it offers features like group chats, automated meeting minutes, to-do lists, and push notifications, ensuring teams stay organized and connected.</p>
-                        <a href="https://github.com/AlnaElsa2004/Orion"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/object.png">
-                    <div class="layer">
-                        <h3>Object Tracking</h3>
-                        <p>This object tracking project utilizes two computer vision techniques, KCF and CSRT, to track objects in video frames. By comparing their speed and accuracy, the project aims to evaluate which algorithm performs better in terms of efficiency and precision, providing insights into their effectiveness for real-time applications.</p>
-                        <a href="https://github.com/AlnaElsa2004/object-tracking"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/yt.png">
-                    <div class="layer">
-                        <h3>YouTube Channel Analysis</h3>
-                        <p>This Python project leverages the YouTube Data API to extract and analyze data from YouTube channels and their videos. The extracted data is loaded into a Pandas DataFrame for analysis, allowing for comparisons between multiple channels based on their statistics.</p>
-                        <a href="https://github.com/AlnaElsa2004/YouTube-Channel-and-Video-Data-Analysis-Using-Python"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/flood.webp">
-                    <div class="layer">
-                        <h3>FloodGuard</h3>
-                        <p>Flood Guard is a predictive modeling project that assesses flood risk in the U.S. based on current rainfall conditions. By leveraging historical weather data and machine learning techniques, it forecasts potential flooding events, offering valuable insights for disaster management and response efforts.</p>
-                        <a href="https://github.com/AlnaElsa2004/FloodGuard"><i class="fa-solid fa-link"></i></a>
-                    </div>
+                    <button onclick="toggleProjects()" class="btn" id="seeMoreBtn">See More</button>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
-          </div>        
-    </div>
 <!-- ... previous HTML remains same until testimonials section ... -->
 
 <section class="testimonials">
@@ -394,6 +396,38 @@ const testimonialsSwiper = new Swiper('.testimonials_container', {
     keyboard: {
         enabled: true,
     },
+});
+    </script>
+    <script>
+        // Add this to your existing JavaScript
+function toggleProjects() {
+    const hiddenProjects = document.querySelectorAll('.work.hidden');
+    const button = document.getElementById('seeMoreBtn');
+    
+    if (hiddenProjects[0].style.display === 'block') {
+        // Hide projects
+        hiddenProjects.forEach(project => {
+            project.style.display = 'none';
+        });
+        button.textContent = 'See More';
+        
+        // Scroll to the projects section
+        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    } else {
+        // Show projects
+        hiddenProjects.forEach(project => {
+            project.style.display = 'block';
+        });
+        button.textContent = 'See Less';
+    }
+}
+
+// Optional: Add this if you want to reset to initial state when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const hiddenProjects = document.querySelectorAll('.work.hidden');
+    hiddenProjects.forEach(project => {
+        project.style.display = 'none';
+    });
 });
     </script>
 </body>

@@ -465,6 +465,7 @@ nav .fa-solid{
 /* Testimonials Section Styles */
 /* Testimonials Section Styles */
 .testimonials {
+    
     padding: 80px 0;
     background: #080808; /* Match the background color of other sections */
 }
@@ -473,6 +474,7 @@ nav .fa-solid{
     padding: 10px 10%; /* Match the padding of other sections */
     max-width: 2000px;
     margin: 0 auto;
+    
 }
 
 .testimonials .sub-title {
@@ -480,6 +482,8 @@ nav .fa-solid{
     font-weight: 600;
     color: #fff;
     margin-bottom: 50px;
+    
+    
 }
 
 .testimonial_card {
@@ -610,4 +614,49 @@ nav .fa-solid{
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
+}
+
+
+/* Add these styles to your existing CSS */
+.work.hidden {
+    display: none;
+}
+
+.work {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Update the existing btn class to work better as a button */
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #ff004f;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
 }
