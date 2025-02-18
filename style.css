@@ -541,7 +541,10 @@ nav .fa-solid{
     font-size: 20px !important;
 }
 .swiper-pagination-bullet {
-    background: #ff004f;
+    width: 10px !important;
+    height: 10px !important;
+    background: rgba(255, 0, 79, 0.5) !important; /* #ff004f with opacity */
+    opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
